@@ -1,4 +1,5 @@
 /*Solution for PT07Y - Is it a tree .*/
+//http://www.spoj.com/problems/PT07Y/
 #include <bits/stdc++.h>
 using namespace std;
 #define MAX 20010
@@ -43,3 +44,12 @@ int main()
     return 0;
 
 }
+/*
+Input:
+3 2
+1 2
+2 3
+
+Output:
+YES
+*/
