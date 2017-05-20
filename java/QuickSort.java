@@ -1,5 +1,5 @@
 /*This is an implementation of quicksort as done in CLSR.
-This program is generating random values then sorting them and also calculating the time taken for doing the same.*/
+The unsorted input array is given by generating random numbers.*/
 import java.util.* ;
 public class QuickSort {
     static Scanner S = new Scanner(System.in);
@@ -13,9 +13,9 @@ public class QuickSort {
 		    Arr[i] = R.nextInt(1000000);
 		} 
 		System.out.println();
-		double t1 = System.nanoTime();
+		double t1 = System.nanoTime();                //Time before execution 
 		Q.quicksort_function(Arr,0,n-1);
-		double t2 = System.nanoTime();
+		double t2 = System.nanoTime();                //Time after execution
 		for (int i=0; i<n; i++) {
 		    System.out.print(Arr[i]+" ");
 		}
