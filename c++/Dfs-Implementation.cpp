@@ -7,8 +7,8 @@ std::vector<int> v[1000];
 void dfs(int x) {
 	visited[x] = 1;
 	cout<<x<<" ";
-	for (int i = 0; i < v[x].size(); ++i) {
-		if (visited[v[x][i]] == 0) {
+	for(int i = 0; i < v[x].size(); ++i) {
+		if(visited[v[x][i]] == 0) {
 			dfs(v[x][i]);                 
 		}
 	}
@@ -18,7 +18,7 @@ int main(){
 	int N,E;
 	int x,y;
 	cin>>N>>E;
-    for (int i = 0; i < E; ++i) {
+    for(int i = 0; i < E; ++i) {
     	cin>>x>>y;
     	v[x].push_back(y);
     	v[y].push_back(x);
