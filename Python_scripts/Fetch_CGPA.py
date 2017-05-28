@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 def set_url(usn):
     if(usn >= 100):
         return 'http://result.vtu.ac.in/cbcs_results2017.aspx?usn=1cr15cs'+str(usn)+'&sem=3'
-    elif(usn<10):
         return 'http://result.vtu.ac.in/cbcs_results2017.aspx?usn=1cr15cs00'+str(usn)+'&sem=3'
     else:
         return 'http://result.vtu.ac.in/cbcs_results2017.aspx?usn=1cr15cs0'+str(usn)+'&sem=3'
@@ -16,7 +15,6 @@ for usn in range(1,197):
     soup = BeautifulSoup(plain_text)
     for rows in soup.find_all('span',id = 'lblSGPA'):
         rows = rows.string
-        if (usn<10):
             fw.write('1cr15cs00'+str(usn)+"\t"+str(rows))
         elif(usn >= 100):
             fw.write('1cr15cs'+str(usn)+"\t"+str(rows))
