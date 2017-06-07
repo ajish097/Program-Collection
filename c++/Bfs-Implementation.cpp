@@ -1,5 +1,5 @@
-/*This is a program to implement bfs*/
-//@author ajish
+// This is an implementation of bfs using adjacency list and Queue data structure.
+//https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/tutorial/
 #include <bits/stdc++.h>
 using namespace std;
 bool visited[1000]; 
